@@ -31,7 +31,7 @@ _Required Libraries_
 
 This study relies heavily on [scikit-learn](https://scikit-learn.org/stable/) but also uses several other established Python libraries. 
 
-See blank-blank.python for comprehsive list of libraries 
+See [PythonLibraries](PythonLibraries.ipynb) for a comprehsive list of libraries used. 
 
 
 ### Files
