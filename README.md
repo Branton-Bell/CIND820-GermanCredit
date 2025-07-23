@@ -29,7 +29,7 @@ Required files are saved locally and uploaded using upload.() to Google Colab - 
 
 _Required Libraries_ 
 
-This study relies heavily on **_sci-kit-learn_** but also uses several other established Python libraries. 
+This study relies heavily on [scikit-learn](https://scikit-learn.org/stable/) but also uses several other established Python libraries. 
 
 See blank-blank.python for comprehsive list of libraries 
 
