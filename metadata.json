@@ -1,6 +1,6 @@
 {
     "Status of Existing Account": {
-        "type": "categorical",
+        "type": "Ordinal Categorical",
         "description": "status of existing checking account",
         "categories": {
             "A11": "... < \u20ac0",
@@ -10,12 +10,12 @@
         }
     },
     "Duration": {
-        "type": "numerical",
+        "type": "Discrete Numeric",
         "unit": "months",
         "description": "duration in months"
     },
     "Credit History": {
-        "type": "categorical",
+        "type": "Ordinal Categorical",
         "description": "status of past credit use",
         "categories": {
             "A30": "no credits taken/ all credits paid back duly",
@@ -26,7 +26,7 @@
         }
     },
     "Purpose": {
-        "type": "categorical",
+        "type": "Nominal Categorical",
         "description": "purpose of the loan",
         "categories": {
             "A40": "car (new)",
@@ -43,12 +43,12 @@
         }
     },
     "Credit Amount": {
-        "type": "numerical",
+        "type": "Continuous Numeric",
         "unit": "\u20ac",
         "description": "euro amount requested"
     },
     "Savings Account": {
-        "type": "categorical",
+        "type": "Ordinal Categorical",
         "description": "savings account status",
         "categories": {
             "A61": "... < 100 \u20ac",
@@ -59,7 +59,7 @@
         }
     },
     "Employment Tenure": {
-        "type": "categorical",
+        "type": "Ordinal Categorical",
         "description": "length of time with current employer",
         "categories": {
             "A71": "unemployed",
@@ -70,12 +70,12 @@
         }
     },
     "Utilization": {
-        "type": "numerical",
+        "type": "Ordinal Categorical",
         "unit": "percent",
         "description": "instalment rate in percentage of disposable income"
     },
     "Relationship Status": {
-        "type": "categorical",
+        "type": "Nominal Categorical",
         "description": "personal status and gender",
         "categories": {
             "A91": "male : divorced/separated",
@@ -85,7 +85,7 @@
         }
     },
     "Other Debtors": {
-        "type": "categorical",
+        "type": "Nominal Categorical",
         "description": "other debtors/guarantors",
         "categories": {
             "A101": "none",
@@ -94,12 +94,11 @@
         }
     },
     "Residence Tenure": {
-        "type": "numerical",
-        "unit": "years",
-        "description": "present residence since"
+        "type": "Ordinal Categorical",
+        "description": "ranking residence tenure"
     },
     "Property": {
-        "type": "categorical",
+        "type": "Nominal Categorical",
         "description": "assets under ownership",
         "categories": {
             "A121": "real estate",
@@ -109,12 +108,12 @@
         }
     },
     "Age": {
-        "type": "numerical",
+        "type": "Discrete Numeric",
         "unit": "years",
         "description": "age in years"
     },
     "Outside Credit": {
-        "type": "categorical",
+        "type": "Nominal Categorical",
         "description": "other instalment plans",
         "categories": {
             "A141": "bank",
@@ -123,7 +122,7 @@
         }
     },
     "Housing": {
-        "type": "categorical",
+        "type": "Nominal Categorical",
         "description": "homeownership status",
         "categories": {
             "A151": "rent",
@@ -132,11 +131,11 @@
         }
     },
     "Credit Products": {
-        "type": "numerical",
+        "type": "Discrete Numeric",
         "description": "number of existing credits at this bank"
     },
     "Job": {
-        "type": "categorical",
+        "type": "Nominal Categorical",
         "description": "type of employment",
         "categories": {
             "A171": "unemployed/unskilled - non-resident",
@@ -146,11 +145,15 @@
         }
     },
     "Responsibility": {
-        "type": "numerical",
-        "description": "sole or joint liability"
+        "type": "Nominal Categorical",
+        "description": "sole or joint liability",
+        "categories":{
+            "1": "Individual",
+            "2": "Joint"
+        }
     },
     "Telephone": {
-        "type": "categorical",
+        "type": "Nominal Categorical",
         "description": "application with telephone number",
         "categories": {
             "A191": "none",
@@ -158,7 +161,7 @@
         }
     },
     "Foreign Worker": {
-        "type": "categorical",
+        "type": "Nominal Categorical",
         "description": "foreign worker status",
         "categories": {
             "A201": "yes",
@@ -166,7 +169,7 @@
         }
     },
     "Target": {
-        "type": "categorical",
+        "type": "Binary",
         "description": "credit risk classification",
         "categories": {
             "1": "Good",
