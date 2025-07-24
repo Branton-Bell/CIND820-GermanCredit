@@ -6,8 +6,8 @@ This is my personal GitHub Repository for CIND 820 Big Data Analytics the capsto
 
 - [Project Overview](#project-overview)
 - [IDE](#ide)
-- [Dataset Files](#dataset-files)
-- [Algorithms](#algorithms)
+- [German Credit Dataset](#german-credit-dataset)
+- [Classification Models](#classification-models)
 - [Evaluation](#evaluation)
 
 ### Project Overview
