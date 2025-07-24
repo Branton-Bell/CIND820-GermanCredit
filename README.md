@@ -37,7 +37,7 @@ This study relies heavily on [scikit-learn](https://scikit-learn.org/stable/) bu
 See [PythonLibraries](PythonLibraries.ipynb) for a comprehsive list of libraries used. 
 
 
-### Dataset Files
+### German Credit Dataset 
 
 
 _Raw Dataset_
@@ -50,7 +50,7 @@ _Metadata_
 
 JSON file created to provide metadata to the German Credit Dataset
 
-### Algorithms
+### Classification Models 
 
 The below classification models are trained and tested in this project. 
 
