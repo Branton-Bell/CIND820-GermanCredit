@@ -1,5 +1,5 @@
 {
-    "Status of Existing Account": {
+    "Chequing Account": {
         "type": "Ordinal Categorical",
         "description": "Status of Existing Checking Account",
         "categories": {
