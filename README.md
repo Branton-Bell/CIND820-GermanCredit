@@ -64,3 +64,30 @@ Click on any of the models to be guided to externally hosted model documentation
 - [XGBoost](https://xgboost.readthedocs.io/en/stable/python/python_intro.html)
 
 ### Evaluation
+
+This study will evaluate models numerically and visually with core performance metrics and plots respectively. 
+
+Each model was trained and tested using functions such as `log_reg_pred()`, `decision_tree_pred()`, `knn_pred()`, `svm_pred()`, and `xgboost_pred()`.
+
+Core performance metrics are computed using the function `core_metrics.()` which calculates _accuracy_, _precision_, _recall_, _F1_, and _specificity_. These core metrics provide a balanced view, especially for imbalanced data where accuracy alone can be misleading—precision and recall emphasize performance on the minority class (bad credit), while F1 balances them. Confusion matrices are plotted using `plot_cm.()` function to visualize true positives, true negatives, false positives, and false negatives, offering insights into error types (e.g., Type I vs. Type II errors critical in credit risk). Comparative ROC AUC is plotted using `plot_roc_curve.()` function, which computes false positive rates, true positive rates, and AUC for each model, aggregating results in a single figure for visual comparison. 
+
+See Initial_Results_V5 for full initial binary classification machine learning models. 
+
+The initial results, summarized in tabular format below, show that the Support Vector Machine (SVM) achieved the highest accuracy (0.7550) and specificity (0.8143), while XGBoost demonstrated balanced performance across metrics.
+
+
+_Initial Results Table_
+
+
+| Model             | Accuracy | Precision | Recall | F1     | Specificity |
+|-------------------|----------|-----------|--------|--------|-------------|
+| Logistic Regression | 0.7350 | 0.5507 | 0.6333 | 0.5891 | 0.7786 |
+| Decision Tree     | 0.5950 | 0.3750 | 0.4833 | 0.4444 | 0.6214 |
+| KNN               | 0.6550 | 0.4286 | 0.4500 | 0.4390 | 0.7429 |
+| SVM               | **0.7550** | **0.5873** | **0.6167** | **0.6016** | **0.8143** |
+| XGBoost           | 0.7300 | 0.5517 | 0.5333 | 0.5424 | 0.8143 |
+
+_ROC AUC Imbalanced_ 
+![](image-1.png)
+_ROC AUC Balanced_
+![](image.png)
